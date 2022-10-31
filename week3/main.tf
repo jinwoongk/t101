@@ -13,3 +13,7 @@ provider "aws" {
 #     Name = "$(var.nickname)-t101-week3"
 #   }
 # }
+
+module "network" {
+  source = "./modules/network"
+}
