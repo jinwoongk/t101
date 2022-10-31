@@ -17,3 +17,7 @@ provider "aws" {
 module "network" {
   source = "./modules/network"
 }
+
+module "db" {
+  source = "./modules/db"
+}
