@@ -3,7 +3,7 @@ resource "aws_vpc" "myvpc" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "t101-study"
+    Name = "$(var.nickname)-t101-study"
   }
 }
 
