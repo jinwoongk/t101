@@ -1,6 +1,6 @@
 resource "aws_db_subnet_group" "mydbsubnet" {
   name       = "mydbsubnetgroup"
-  subnet_ids = [module.network.aws_subnet.mysubnet3.id, module.network.aws_subnet.mysubnet4.id]
+  subnet_ids = [module.network.mysubnet3_id, module.network.mysubnet4_id]
 
   tags = {
     Name = "My DB subnet group"
