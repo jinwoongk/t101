@@ -1,9 +1,9 @@
 output "address" {
-  value       = module.db.myrds.address
+  value       = aws_db_instance.myrds.address
   description = "Connect to the database at this endpoint"
 }
 
 output "port" {
-  value       = module.db.myrds.port
+  value       = aws_db_instance.myrds.port
   description = "The port the database is listening on"
 }

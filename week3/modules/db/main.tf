@@ -1,3 +1,6 @@
+module "network" {
+  source = "../network"
+}
 resource "aws_db_subnet_group" "mydbsubnet" {
   name       = "mydbsubnetgroup"
   subnet_ids = [module.network.mysubnet3_id, module.network.mysubnet4_id]
