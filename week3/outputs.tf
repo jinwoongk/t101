@@ -1,14 +1,14 @@
 output "address" {
-  value       = module.db.aws_db_instance.myrds.address
+  value       = module.db.myrds.address
   description = "Connect to the database at this endpoint"
 }
 
 output "port" {
-  value       = module.db.aws_db_instance.myrds.port
+  value       = module.db.myrds.port
   description = "The port the database is listening on"
 }
 
 output "vpcid" {
-  value       = module.network.aws_vpc.myvpc.id
+  value       = module.network.myvpc.id
   description = "My VPC Id"
 }
