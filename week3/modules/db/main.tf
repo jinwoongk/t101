@@ -18,9 +18,4 @@ resource "aws_db_instance" "myrds" {
   db_subnet_group_name   = aws_db_subnet_group.mydbsubnet.name
   vpc_security_group_ids = [module.network.aws_security_group.mysg2.id]
   skip_final_snapshot    = true
-  
-  # An argument named "db_name" is not expected here.
-  # db_name                = var.db_name
-  # username               = var.db_username
-  # password               = var.db_password
 }
