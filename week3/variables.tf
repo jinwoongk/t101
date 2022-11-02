@@ -19,3 +19,7 @@ variable "db_name" {
   type        = string
   default     = "tstudydb"
 }
+
+variable "db_user" {}
+
+variable "db_pass" {}

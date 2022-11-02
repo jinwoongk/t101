@@ -20,6 +20,6 @@ resource "aws_db_instance" "myrds" {
   skip_final_snapshot    = true
   
   db_name                = var.name
-  username               = var.username
-  password               = var.password
+  username               = var.user
+  password               = var.pass
 }
