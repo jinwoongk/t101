@@ -18,13 +18,11 @@ variable "nickname" {
 variable "db_user" {
   description = "The username for the database"
   type        = string
-  sensitive   = true
 }
 
 variable "db_pass" {
   description = "The password for the database"
   type        = string
-  sensitive   = true
 }
 
 variable "db_name" {
