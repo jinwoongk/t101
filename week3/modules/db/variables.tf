@@ -1,14 +1,14 @@
-variable "db_username" {
+variable "username" {
   description = "The username for the database"
   type        = string
 }
 
-variable "db_password" {
+variable "password" {
   description = "The password for the database"
   type        = string
 }
 
-variable "db_name" {
+variable "name" {
   description = "The name to use for the database"
   type        = string
   default     = "tstudydb"
