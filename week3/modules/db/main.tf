@@ -16,7 +16,7 @@ resource "aws_db_instance" "myrds" {
   allocated_storage      = 10
   instance_class         = "db.t2.micro"
   db_subnet_group_name   = aws_db_subnet_group.mydbsubnet.name
-  vpc_security_group_ids = [module.network.mysg2.id]
+  vpc_security_group_ids = [module.network.mysg2_id]
   skip_final_snapshot    = true
   
   db_name                = var.name
