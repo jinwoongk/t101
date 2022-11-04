@@ -14,10 +14,10 @@ repos:
           - --args=-platform=windows_amd64
           - --args=-platform=darwin_amd64
 
-      # - id: terraform_tflint
-      #   args:
-      #     - --args=--module
-      #     - --args=--enable-rule=terraform_documented_variables
+      - id: terraform_tflint
+        args:
+          - --args=--module
+          - --args=--enable-rule=terraform_documented_variables
 
       # - name: Terraform Scan with 'tfsec'
       #   id: terraform_tfsec
