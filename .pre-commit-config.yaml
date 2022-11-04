@@ -26,6 +26,10 @@ repos:
       #   id: terraform_validate
       #   args:
       #     - --init-args=-lockfile=readonly
+      - id: terrascan
+        args:
+          - --args=--non-recursive # avoids scan errors on subdirectories without Terraform config files
+          - --args=--policy-type=aws
 
       - name: Terraform Documentation
         id: terraform_docs
