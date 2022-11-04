@@ -29,4 +29,3 @@ variable "db_pass" {
   description = "The password for the database"
   type        = string
 }
-

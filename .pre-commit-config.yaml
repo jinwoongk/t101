@@ -14,18 +14,18 @@ repos:
           - --args=-platform=windows_amd64
           - --args=-platform=darwin_amd64
 
-      - name: Terraform Lint with 'tflint'
-        id: terraform_tflint
-        args:
-          - --args=--enable-rule=terraform_documented_variables
+      # - id: terraform_tflint
+      #   args:
+      #     - --args=--module
+      #     - --args=--enable-rule=terraform_documented_variables
 
       # - name: Terraform Scan with 'tfsec'
       #   id: terraform_tfsec
 
-      - name: Terraform Validation
-        id: terraform_validate
-        args:
-          - --init-args=-lockfile=readonly
+      # - name: Terraform Validation
+      #   id: terraform_validate
+      #   args:
+      #     - --init-args=-lockfile=readonly
 
       - name: Terraform Documentation
         id: terraform_docs

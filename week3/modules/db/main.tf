@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.region
+}
 module "network" {
   source = "../network"
 }
@@ -18,8 +21,8 @@ resource "aws_db_instance" "myrds" {
   db_subnet_group_name   = aws_db_subnet_group.mydbsubnet.name
   vpc_security_group_ids = [module.network.mysg2_id]
   skip_final_snapshot    = true
-  
-  db_name                = var.name
-  username               = var.username
-  password               = var.password
+
+  db_name  = var.name
+  username = var.username
+  password = var.password
 }
