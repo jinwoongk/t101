@@ -32,6 +32,7 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_name"></a> [name](#input\_name) | The name to use for the database | `string` | `"tstudydb"` | no |
+| <a name="input_nickname"></a> [nickname](#input\_nickname) | The name to use for the user nickname | `string` | n/a | yes |
 | <a name="input_password"></a> [password](#input\_password) | The password for the database | `string` | n/a | yes |
 | <a name="input_username"></a> [username](#input\_username) | The username for the database | `string` | n/a | yes |
 

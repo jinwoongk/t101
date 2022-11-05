@@ -9,7 +9,8 @@ terraform {
 
 
 module "network" {
-  source = "../network"
+  source   = "../network"
+  nickname = var.nickname
 }
 resource "aws_db_subnet_group" "mydbsubnet" {
   name       = "mydbsubnetgroup"

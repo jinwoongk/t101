@@ -13,3 +13,8 @@ variable "name" {
   type        = string
   default     = "tstudydb"
 }
+
+variable "nickname" {
+  description = "The name to use for the user nickname"
+  type        = string
+}
