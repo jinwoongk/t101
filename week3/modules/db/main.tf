@@ -1,6 +1,13 @@
-provider "aws" {
-  region = var.region
+terraform {
+  required_providers {
+    aws = {
+      version = "~> 2.13.0"
+    }
+  }
+  required_version = "~> 1.3.1"
 }
+
+
 module "network" {
   source = "../network"
 }

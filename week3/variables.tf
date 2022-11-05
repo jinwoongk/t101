@@ -1,7 +1,7 @@
-variable "TFC_WORKSPACE_NAME" {
-  type        = string
-  description = "Terraform Cloud Workspace 이름"
-}
+# variable "TFC_WORKSPACE_NAME" {
+#   type        = string
+#   description = "Terraform Cloud Workspace 이름"
+# }
 
 variable "region" {
   type        = string
