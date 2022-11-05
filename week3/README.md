@@ -27,6 +27,8 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_TF_ROLE_NAME"></a> [TF\_ROLE\_NAME](#input\_TF\_ROLE\_NAME) | 각 계정에 TF 프로비저닝을 하기 위한 IAM Role(dev 계정의 IAM 유저(TFCUser)를 통해 Assume) | `string` | n/a | yes |
+| <a name="input_account_id"></a> [account\_id](#input\_account\_id) | Shared 계정의 Account ID | `string` | n/a | yes |
 | <a name="input_db_name"></a> [db\_name](#input\_db\_name) | The name to use for the database | `string` | `"tstudydb"` | no |
 | <a name="input_db_pass"></a> [db\_pass](#input\_db\_pass) | The password for the database | `string` | n/a | yes |
 | <a name="input_db_user"></a> [db\_user](#input\_db\_user) | The username for the database | `string` | n/a | yes |

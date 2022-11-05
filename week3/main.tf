@@ -13,15 +13,10 @@ terraform {
 
 provider "aws" {
   region = var.region
+  assume_role {
+    role_arn = join("", ["arn:aws:iam::", var.account_id, ":role/", var.TF_ROLE_NAME])
+  }
 }
-
-# resource "aws_instance" "example" {
-#   ami           = "ami-0c76973fbe0ee100c"
-#   instance_type = "t2.micro"
-#   tags = {
-#     Name = "$(var.nickname)-t101-week3"
-#   }
-# }
 
 module "network" {
   source   = "./modules/network"
