@@ -16,7 +16,7 @@ resource "aws_db_subnet_group" "mydbsubnet" {
   subnet_ids = [module.network.mysubnet3_id, module.network.mysubnet4_id]
 
   tags = {
-    Name = "My DB subnet group"
+    Name = "${var.nickname} DB subnet group"
   }
 }
 
