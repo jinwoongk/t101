@@ -36,7 +36,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_nickname"></a> [nickname](#input\_nickname) | The name to use for the user nickname | `string` | n/a | yes |
+| <a name="input_nickname"></a> [nickname](#input\_nickname) | The name to use for the user nick name???? | `string` | n/a | yes |
 
 ## Outputs
 
