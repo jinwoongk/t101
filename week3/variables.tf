@@ -22,7 +22,7 @@ variable "region" {
 variable "nickname" {
   type        = string
   default     = "jinwoong"
-  description = "nick name"
+  description = "nickname"
 }
 variable "db_name" {
   description = "The name to use for the database"
